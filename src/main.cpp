@@ -77,7 +77,7 @@ map<uint256, set<uint256> > mapOrphanTransactionsByPrev;
 // Constant stuff for coinbase transactions we create:
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "Stratis Signed Message:\n";
+const string strMessageMagic = "Stratis Signed Message:\n"; //Can/should this be changed?
 
 //////////////////////////////////////////////////////////////////////////////
 //
