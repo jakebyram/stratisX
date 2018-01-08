@@ -140,6 +140,7 @@ void OptionsDialog::setMapper()
     mapper->addMapping(ui->unit, OptionsModel::DisplayUnit);
     mapper->addMapping(ui->coinControlFeatures, OptionsModel::CoinControlFeatures);
     mapper->addMapping(ui->useBlackTheme, OptionsModel::UseBlackTheme);
+    ui->useBlackTheme->setHidden(true);
 }
 
 void OptionsDialog::enableApplyButton()
