@@ -1128,8 +1128,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB. Fee 0.01 recommended.</source>
-        <translation>Valgfri transaktionsgebyr pr kB, som hjælper med at sikre dine transaktioner bliver behandlet hurtigt. De fleste transaktioner er 1 kB. Gebyr 0,01 anbefales.</translation>
+        <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB. Fee 0.05 recommended.</source>
+        <translation>Valgfri transaktionsgebyr pr kB, som hjælper med at sikre dine transaktioner bliver behandlet hurtigt. De fleste transaktioner er 1 kB. Gebyr 0,05 anbefales.</translation>
     </message>
     <message>
         <location line="+15"/>

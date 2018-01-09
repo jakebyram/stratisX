@@ -1133,8 +1133,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB. Fee 0.01 recommended.</source>
-        <translation>Vapaavalintainen rahansiirtopalkkio kilotavua kohden auttaa varmistamaan että rahansiirtosi käsitellään nopeasti. Suurin osa rahansiirroista on alle yhden kilotavun. Palkkiota 0.01 suositellaan.</translation>
+        <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB. Fee 0.05 recommended.</source>
+        <translation>Vapaavalintainen rahansiirtopalkkio kilotavua kohden auttaa varmistamaan että rahansiirtosi käsitellään nopeasti. Suurin osa rahansiirroista on alle yhden kilotavun. Palkkiota 0.05 suositellaan.</translation>
     </message>
     <message>
         <location line="+15"/>

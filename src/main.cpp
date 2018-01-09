@@ -996,13 +996,17 @@ static CBigNum GetProofOfStakeLimit(int nHeight)
 // miner's coin base reward
 int64_t GetProofOfWorkReward(int64_t nFees)
 {
-	int64_t PreMine = 98000000 * COIN;
-    if(pindexBest->nHeight == 1){return PreMine;} else {return 4*COIN;}
+	int64_t PreMine = 130000000 * COIN; //Approx outstanding DNotes as of 1/1/2018
+    if(pindexBest->nHeight == 1){return PreMine;} else {return 1*COIN;}
 }
 
 // miner's coin stake reward
 int64_t GetProofOfStakeReward(const CBlockIndex* pindexPrev, int64_t nCoinAge, int64_t nFees)
 {
+    //(outstanding coin / blocks in a year) * two percent
+    //(130 000 000 / 525600) * .02
+    int64_t testVar = (pindexPrev->nMoneySupply / 525600) * .02;
+    
     return (1 * COIN) + nFees;
 }
 
@@ -1540,7 +1544,7 @@ bool CBlock::ConnectBlock(CTxDB& txdb, CBlockIndex* pindex, bool fJustCheck)
     // ppcoin: track money supply and mint amount info
     pindex->nMint = nValueOut - nValueIn + nFees;
     pindex->nMoneySupply = (pindex->pprev? pindex->pprev->nMoneySupply : 0) + nValueOut - nValueIn;
-    if (!txdb.WriteBlockIndex(CDiskBlockIndex(pindex)))
+    if (!txdb.WriteBlo ckIndex(CDiskBlockIndex(pindex)))
         return error("Connect() : WriteBlockIndex for pindex failed");
 
     if (fJustCheck)

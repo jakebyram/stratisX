@@ -1128,8 +1128,8 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB. Fee 0.01 recommended.</source>
-        <translation>Valfri transaktionsavgift per kB som försäkrar att transaktionen behandlas snabbt. De flesta transaktionerna är 1 kB. En avgift på 0,01 är rekommenderad.</translation>
+        <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB. Fee 0.05 recommended.</source>
+        <translation>Valfri transaktionsavgift per kB som försäkrar att transaktionen behandlas snabbt. De flesta transaktionerna är 1 kB. En avgift på 0,05 är rekommenderad.</translation>
     </message>
     <message>
         <location line="+15"/>
