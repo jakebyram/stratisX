@@ -1006,6 +1006,7 @@ int64_t GetProofOfStakeReward(const CBlockIndex* pindexPrev, int64_t nCoinAge, i
     //(outstanding coin / blocks in a year) * two percent
     //(130 000 000 / 525600) * .02
     int64_t testVar = (pindexPrev->nMoneySupply / 525600) * .02;
+    //think about rounding
     
     return (1 * COIN) + nFees;
 }
@@ -1544,7 +1545,7 @@ bool CBlock::ConnectBlock(CTxDB& txdb, CBlockIndex* pindex, bool fJustCheck)
     // ppcoin: track money supply and mint amount info
     pindex->nMint = nValueOut - nValueIn + nFees;
     pindex->nMoneySupply = (pindex->pprev? pindex->pprev->nMoneySupply : 0) + nValueOut - nValueIn;
-    if (!txdb.WriteBlo ckIndex(CDiskBlockIndex(pindex)))
+    if (!txdb.WriteBlockIndex(CDiskBlockIndex(pindex)))
         return error("Connect() : WriteBlockIndex for pindex failed");
 
     if (fJustCheck)
